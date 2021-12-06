@@ -8,8 +8,6 @@ inputs:
     default: 'World'
   pass-action-deploy: 
     required: true
-  senha:
-    default: ${{ secrets.SENHA_PROJ_ESP }}
 outputs:
   time: # id of output
     description: 'The time we greeted you'
@@ -19,4 +17,3 @@ runs:
   args:
     - ${{ inputs.who-to-greet }}
     - ${{ inputs.pass-action-deploy }}
-    - ${{ inputs.senha }}
